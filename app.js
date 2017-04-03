@@ -1,18 +1,18 @@
-var express = require('express'),
-    path = require('path'),
-    favicon = require('serve-favicon'),
-    logger = require('morgan'),
-    cookieParser = require('cookie-parser'),
-    bodyParser = require('body-parser'),
-    session = require('express-session'),
-    passport  = require('passport'),
-    LocatStrategy = require('passport-local').Strategy,
-    multer  = require('multer'),
-    uploads = multer({dest: './uploads'}),
-    flash = require('connect-flash'),
-    mongo = require('mongodb'),
-    mongoose  = require('mongoose'),
-    expressValidator = require('express-validator');
+var express           = require('express'),
+    path              = require('path'),
+    favicon           = require('serve-favicon'),
+    logger            = require('morgan'),
+    cookieParser      = require('cookie-parser'),
+    bodyParser        = require('body-parser'),
+    session           = require('express-session'),
+    passport          = require('passport'),
+    LocatStrategy     = require('passport-local').Strategy,
+    multer            = require('multer'),
+    uploads           = multer({dest: './uploads'}),
+    flash             = require('connect-flash'),
+    mongo             = require('mongodb'),
+    mongoose          = require('mongoose'),
+    expressValidator  = require('express-validator');
 
 var db = mongoose.connection;
 
